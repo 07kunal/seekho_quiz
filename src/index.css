@@ -1,0 +1,90 @@
+:root {
+  --color1: #feffff;
+  --mainColor: #17252a;
+  --subColor: #3aafa9;
+  --borderColor: #2b7a78;
+  --background: #def2f1;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.heading {
+  text-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mainColor);
+}
+
+.heading h1 {
+  color: var(--color1);
+}
+
+.quiz_btn {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--borderColor) !important;
+  border: 3px solid var(--mainColor) !important;
+  color: var(--color1);
+  font-weight: 600;
+  border-radius: 23px;
+  cursor: pointer;
+}
+
+.quiz_result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 420px;
+}
+.quiz_result h2 {
+  font-size: 25px;
+  color: var(--mainColor);
+}
+
+.quiz_result .percentage_ span {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--borderColor);
+  text-align: center;
+}
+
+.question_result {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.time_taken p {
+  font-size: 20px;
+  font-weight: 600;
+
+
+}
+.time_taken span{
+  color: var(--borderColor);
+}
+.questions_quiz p{
+  font-size: 18px;
+}
+
+.quiz_option{
+  font-size: 16px;
+}
